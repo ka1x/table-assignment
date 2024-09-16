@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+:root {
+  --acc-col: rgba(255, 95, 32, 0.82);
+  --white: #fff;
+  --off-white: #f3f3f3;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-header {
+  color: var(--acc-col);
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 2rem 4rem;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.users-container {
+  margin: auto;
+  vertical-align: middle;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 3rem 0;
+  gap: 3rem;
+  align-items: center;
+}
+
+.user-table {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
+  width: 66%;
+  thead {
+    tr {
+      background-color: var(--acc-col);
+      color: var(--white);
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+
+  tbody {
+    tr:nth-of-type(even) {
+      background-color: var(--off-white);
+    }
+
+    tr.active-row {
+      font-weight: bold;
+      color: #009879;
+    }
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  .filter-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    input[type="text"] {
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+    label {
+      font-size: 0.9rem;
+    }
+  }
+  .reset-btn {
+    color: var(--acc-col);
+    font-weight: 900;
+    font-size: 1rem;
+    background: none;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid var(--acc-col);
+    cursor: pointer;
+  }
+}
