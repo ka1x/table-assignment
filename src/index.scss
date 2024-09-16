@@ -52,11 +52,6 @@ html {
     tr:nth-of-type(even) {
       background-color: var(--off-white);
     }
-
-    tr.active-row {
-      font-weight: bold;
-      color: #009879;
-    }
   }
 
   th,
@@ -80,6 +75,7 @@ html {
     input[type="text"] {
       padding: 0.5rem;
       border-radius: 10px;
+      border: 2px solid black;
     }
     label {
       font-size: 0.9rem;
@@ -90,9 +86,27 @@ html {
     font-weight: 900;
     font-size: 1rem;
     background: none;
-    padding: .5rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+
     border-radius: 10px;
     border: 2px solid var(--acc-col);
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filter-form {
+    flex-direction: column;
+    .filter-row {
+      width: 100%;
+      justify-content: space-between;
+
+      label {
+        margin-right: 0.5rem;
+        text-align: end;
+        width: 100%;
+      }
+    }
   }
 }
