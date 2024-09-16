@@ -16,9 +16,16 @@ html {
   color: var(--acc-col);
   font-weight: 600;
   font-size: 3rem;
-  margin: 2rem 4rem;
+  margin: 2rem 0 1rem 0;
   letter-spacing: 4px;
   text-align: center;
+}
+.header-line {
+  width: 60%;
+  height: 2px;
+  background: var(--acc-col);
+  margin: auto;
+  border-radius: 50%;
 }
 .users-container {
   margin: auto;
@@ -38,7 +45,7 @@ html {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-collapse: collapse;
-  width: 66%;
+  width: 80%;
   thead {
     tr {
       background-color: var(--acc-col);
@@ -56,7 +63,7 @@ html {
 
   th,
   td {
-    padding: 0.5rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -75,22 +82,22 @@ html {
     input[type="text"] {
       padding: 0.5rem;
       border-radius: 10px;
-      border: 2px solid black;
+      border: 1px solid black;
     }
     label {
       font-size: 0.9rem;
     }
   }
   .reset-btn {
-    color: var(--acc-col);
     font-weight: 900;
-    font-size: 1rem;
-    background: none;
+    font-size: 0.9rem;
+    background: var(--acc-col);
     padding: 0.5rem 1rem;
+    margin: 0 1rem;
     text-transform: uppercase;
-
     border-radius: 10px;
-    border: 2px solid var(--acc-col);
+    border: none;
+    color: var(--white);
     cursor: pointer;
   }
 }

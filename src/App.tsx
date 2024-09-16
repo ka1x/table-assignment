@@ -41,6 +41,7 @@ function App() {
       {!loading && !error && (
         <>
           <h1 className="page-header">Users Table</h1>
+          <div className="header-line"></div>
           <div className="users-container">
             <FilterForm />
 
@@ -64,6 +65,7 @@ function App() {
                 ))}
               </tbody>
             </table>
+            <div className="header-line"></div>
           </div>
         </>
       )}
